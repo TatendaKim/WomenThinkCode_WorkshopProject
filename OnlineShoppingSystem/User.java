@@ -5,6 +5,13 @@ public class User {
     private String email;
     private String password;
 
+    // The Constructor
+    public User(String username, String email) {
+        this.username = username;
+        this.email = email;
+    }
+
+    // Getter and Setter for email
     public String getEmail() {
         return email;
     }
@@ -13,6 +20,7 @@ public class User {
         this.email = email;
     }
 
+    // Getter and Setter for password
     public String getPassword() {
         return password;
     }
@@ -21,6 +29,7 @@ public class User {
         this.password = password;
     }
 
+    // Getter and Setter for username
     public String getUsername() {
         return username;
     }

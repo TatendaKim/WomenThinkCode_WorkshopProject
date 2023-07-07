@@ -3,9 +3,17 @@ package OnlineShoppingSystem;
 public class Product {
 
     private String name;
-    private int price;
+    private double price;
     private int quantity;
 
+    // Constructor
+    public Product(String name, double price, int quantity){
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    // Getter and Setter for name
     public String getName() {
         return name;
 
@@ -15,14 +23,16 @@ public class Product {
 
     }
 
-    public int getPrice(){
+    // Getter and Setter for price
+    public double getPrice(){
         return price;
     }
 
-    public void setPrice(int price){
+    public void setPrice(double price){
         this.price = price;
     }
 
+    //Getter and Setter for quantity
     public int getQuantity(){
         return quantity;
     }
@@ -31,8 +41,8 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public int productTotalCost(){
-        return quantity * price;
+    public double calculateTotalCost(){
+        return  price * quantity;
     }
 
 
